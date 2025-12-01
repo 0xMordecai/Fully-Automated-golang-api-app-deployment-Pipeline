@@ -9,5 +9,6 @@ RUN GO111MODULE=off GOOS=linux go build -a installsuffix cgo -o myAPI . && chmod
 #   second stage
 FROM alpine:3.19.6 AS dev
 WORKDIR /app
+EXPOSE 8888
 COPY --from=build /app .
 CMD ["./myAPI"]
