@@ -4,6 +4,6 @@ WORKDIR /app
 COPY go.mod .
 COPY main.go .
 RUN go mod tidy
-RUN GO111MODULE=off GOOS=linux go build -a installsuffix cgo -o app . && chmod +x ./app
+RUN GO111MODULE=off GOOS=linux go build -a installsuffix cgo -o myAPI . && chmod +x ./myAPI
 
 #   second stage
