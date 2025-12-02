@@ -11,3 +11,9 @@
     - role: worker
     - role: worker
 ```
+
+**To bootstrap your KinD cluster with the preceding configuration, run the following command:**
+
+```shell
+    kind create cluster --config kind-config.yaml
+```
