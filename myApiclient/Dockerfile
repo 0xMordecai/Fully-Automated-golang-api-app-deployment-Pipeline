@@ -10,4 +10,4 @@ RUN CGO_ENABLED=0 GOOS=linux go build -ldflags  "-w -X main.docker=true" -o myCl
 FROM alpine:3.19.6 AS dev
 WORKDIR /app
 COPY --from=build /app .
-CMD ["./myClientAPI"] Privacy 
+CMD ["./myClientAPI"] 
