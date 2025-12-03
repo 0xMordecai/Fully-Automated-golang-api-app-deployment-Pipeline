@@ -8,3 +8,7 @@ spec:
   selectors:
     matchLabels:
       app: myapi
+  template:
+  metadata:
+    labels:
+      app: myapi
