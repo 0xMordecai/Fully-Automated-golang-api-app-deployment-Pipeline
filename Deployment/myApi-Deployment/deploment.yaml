@@ -9,6 +9,9 @@ spec:
     matchLabels:
       app: myapi
   template:
-  metadata:
-    labels:
-      app: myapi
+    metadata:
+      labels:
+        app: myapi
+    spec:
+      containers:
+      - name: kings5layer/myapi:latest
