@@ -5,3 +5,5 @@
 [`Done`]  configure infrastructure for kubernetes locally using KinD
 
 [`on progress`]  create Deployment code
+
+[] write the configuration file to expose the pods to external world using Kubernetes Services
