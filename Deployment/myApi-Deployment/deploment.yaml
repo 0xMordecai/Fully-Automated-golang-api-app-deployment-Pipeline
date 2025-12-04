@@ -16,7 +16,7 @@ spec:
       containers:
       - name: myapi
         imagePullPolicy: Always
-        image: kings5layer/myapi:latest
+        image: kings5layer/myapi:0.0.1
 
         resources:
           limits:
