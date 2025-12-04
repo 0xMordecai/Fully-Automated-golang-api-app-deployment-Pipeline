@@ -6,4 +6,4 @@
 
 [`on progress`]  create Deployment code
 
-[] write the configuration file to expose the pods to external world using Kubernetes Services
+[`on progress`] write the configuration file to expose the pods to external world using Kubernetes Services
