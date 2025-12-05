@@ -14,4 +14,6 @@
 
 ## Roll-Out Update
 
+[]  containerizing the App's new version
+
 []  Adding a Kubernetes Deployment strategy
