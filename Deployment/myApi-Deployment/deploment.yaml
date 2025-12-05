@@ -28,14 +28,14 @@ spec:
 
           livenessProbe:
             httpGet:
-              path: /health
+              path: /health/liveness
               port: 8888
               failureThreshold: 3
               initialDelaySeconds: 3
               periodSeconds: 3
           readinessProbe:
             httpGet:
-              path: /health
+              path: /health/readiness
               port: 8888
               failureThreshold: 3
               initialDelaySeconds: 3
