@@ -4,4 +4,4 @@
 
 ## Running Requirment
 
-- **`Kubectl`, to Download it look at `https://kubernetes.io/docs/tasks/tools/`** 
+- **`Kubectl`, to Download the tool look at `https://kubernetes.io/docs/tasks/tools/`** 
