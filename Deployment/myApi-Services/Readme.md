@@ -2,3 +2,4 @@
 
 **After we deploying our containerized API, we have expose it to the external world and to do that we will use `NodePort Service` resource**
 
+we will apply this manifest for the NodePort Service resource
