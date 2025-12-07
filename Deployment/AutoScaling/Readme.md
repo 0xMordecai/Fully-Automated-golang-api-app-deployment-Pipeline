@@ -15,7 +15,7 @@ spec:
     name: myapi-deployment
   minReplicas: 1
   maxReplicas: 3
-  mertics:
+  metrics:
   - type: Resources
     resource:
       name: cpu
