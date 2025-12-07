@@ -23,3 +23,5 @@ spec:
         type: Utilization
         averageUtilization: 50%
 ```
+
+We will use the following command to perform autoscaling:
