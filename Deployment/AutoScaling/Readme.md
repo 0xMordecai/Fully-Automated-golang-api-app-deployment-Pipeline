@@ -21,7 +21,7 @@ spec:
       name: cpu
       target: 
         type: Utilization
-        averageUtilization: 50%
+        averageUtilization: 50
 ```
 
 **We will use the following command to perform autoscaling:**
