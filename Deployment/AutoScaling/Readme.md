@@ -24,7 +24,7 @@ spec:
         averageUtilization: 50%
 ```
 
-We will use the following command to perform autoscaling:
+**We will use the following command to perform autoscaling:**
 ```shell
 kubectl apply -f hpa.yaml
 ```
