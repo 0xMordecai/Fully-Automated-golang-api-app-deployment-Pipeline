@@ -1,0 +1,4 @@
+name: Build and Test Api
+on:
+  push:
+    branches: [ main ]
