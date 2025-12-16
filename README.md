@@ -10,7 +10,7 @@
 
 [`on progress`] write the configuration file to expose the pods to external world using Kubernetes Services
 
-[]  Configure Horizontal Pod autoscaling Resource
+[`Done`]  Configure Horizontal Pod autoscaling Resource
 
 ## Roll-Out Update
 
