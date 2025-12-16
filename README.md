@@ -16,4 +16,4 @@
 
 []  containerizing the App's new version
 
-[]  Adding a Kubernetes Deployment strategy
+[`On-progress`]  Adding a Kubernetes Deployment strategy
