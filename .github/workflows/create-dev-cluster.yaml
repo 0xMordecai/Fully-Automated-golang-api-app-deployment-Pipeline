@@ -1,15 +1,15 @@
 name: Create Kubernetes Cluster
 on:
   push: 
-    branches: [ prod, dev ]
+    branches: [ dev ]
   pull_request: 
-    branches: [ prod ]
+    branches: [ dev ]
 jobs:
   deploy-terraform:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./environments
+        working-directory: ./environments/development
     steps:
     - uses: actions/checkout@v2
     - name: Install Terraform
