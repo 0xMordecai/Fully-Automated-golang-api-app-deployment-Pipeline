@@ -1,0 +1,19 @@
+name: Create Kubernetes Cluster
+on:
+  push: 
+    branches: [ dev ]
+  pull_request: 
+    branches: [ dev ]
+jobs:
+  deploy-terraform:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./environments/development
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install Terraform
+      id: install-terraform
+      run: wget -O - https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg && echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(grep -oP '(?<=UBUNTU_CODENAME=).*' /etc/os-release || lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list && sudo apt update && sudo apt install terraform
+    - name: Apply Terraform
+      id: apply-terraform
