@@ -4,3 +4,9 @@ on:
     branches: [ prod, dev ]
   pull_request: 
     branches: [ prod ]
+jobs:
+  deploy-terraform:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./environments
